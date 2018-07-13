@@ -28,8 +28,8 @@ Suppose that the input given is taken by the following code and the default exte
 
 by giving file=../../../../etc/passwd%00 we can access the file by passing the ".php" extension.
 
-An attacker can also download files by changing the file names.For example
-<br>url : example/?download=broucher.pdf
+An attacker can also download files by changing the file names. For example
+<br>URL : example/?download=broucher.pdf
 </br>The attacker may change the broucher.pdf to any other file such as passwords.txt,users.txt etc,
 
 ## Impact
