@@ -29,7 +29,7 @@ Suppose that the input given is taken by the following code and the default exte
 by giving file=../../../../etc/passwd%00 we can access the file by passing the ".php" extension.
 
 ## Impact
-A successful LFI may result in compromise of the system ,data leakage etc.The attacker can read,write files and run arbitary codes with privileges of web server
+A successful LFI may result in compromise of the system ,data leakage etc.The attacker can read,write,download files and can also run arbitary codes with privileges of web server
 
 ## Explore it yourself
 Make a php file with the code given above and explore different possibilities of the vulnerability.
