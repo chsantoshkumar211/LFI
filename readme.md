@@ -1,7 +1,6 @@
 # Local File Inclusion
 
-### OWASP :
- Local File Inclusion (also known as LFI) is the process of including files, that are already locally present on the server, through the exploiting of vulnerable inclusion procedures implemented in the application. This vulnerability occurs, for example, when a page receives, as input, the path to the file that has to be included and this input is not properly sanitized, allowing directory traversal characters (such as dot-dot-slash) to be injected. Although most examples point to vulnerable PHP scripts, we should keep in mind that it is also common in other technologies such as JSP, ASP and others.
+ > Local File Inclusion (also known as LFI) allows an attacker to include files in server side through web browser.File inclusions are part of every advanced server side scripting language on the web.LFI is commonly found to affect web applications that rely on a scripting run time.This occurs mainly due to a bad input validation mechanism, wherein the user’s input is passed to the file include commands without proper validation. 
 
 ### Local file inclusion in PHP:
 
