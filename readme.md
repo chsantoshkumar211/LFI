@@ -1,6 +1,6 @@
 # Local File Inclusion
 
- > Local File Inclusion (also known as LFI) allows an attacker to include files in server side through web browser.File inclusions are part of every advanced server side scripting language on the web.LFI is commonly found to affect web applications that rely on a scripting run time.This occurs mainly due to a bad input validation mechanism, wherein the user’s input is passed to the file include commands without proper validation. 
+ > Local File Inclusion (also known as LFI) allows an attacker to include files in server-side through the web browser. File inclusions are part of every advanced server-side scripting language on the web.LFI is commonly found to affect web applications that rely on a scripting runtime. This occurs mainly due to a bad input validation mechanism, wherein the user’s input is passed to the file include commands without proper validation.
 
 ### Local file inclusion in PHP:
 
@@ -28,14 +28,14 @@ Suppose that the input given is taken by the following code and the default exte
 by giving file=../../../../etc/passwd%00 we can access the file by passing the ".php" extension.
 
 An attacker can also download files by changing the file names. For example
-<br>URL : example/?download=broucher.pdf
-</br>The attacker may change the broucher.pdf to any other file such as passwords.txt,users.txt etc,
+<br>URL: example/?download=broucher.pdf
+</br>The attacker may change the broucher.pdf to any other file such as passwords.txt,users.txt etc.
 
 ## Impact
-A successful LFI may result in compromise of the system ,data leakage etc.The attacker can read,write,download files and can also run arbitary codes with privileges of web server
+A successful LFI may result in compromise of the system, data leakage etc. The attacker can read, write, download files and can also run arbitrary codes with privileges of the web server.
 
 ## Explore it yourself
-Make a php file with the code given above and explore different possibilities of the vulnerability.
+Make a PHP file with the code given above and explore different possibilities of the vulnerability.
 ### Somepayloads :
 - ../../../../etc/passwd/etc/issue
 - ../../../../etc/passwd
