@@ -16,7 +16,7 @@ The value of “file” parameter is taken into the following PHP code, and the 
    }
 ?>
 ```
-An attacker may give malicious input for the "file" parameter which may give unauthorized files in that directory, he can also change the directories by using characters like "../".He can access the user credentials by giving input as "../../../../etc/passwd".In some cases where the file extension is added by default, we can avoid it by adding null byte terminator " %00".Any character after this special character will be ignored.
+An attacker may give malicious input for the "file" parameter which may give unauthorized files in that directory, he can also change the directories by using characters like "../".He can access the user credentials by giving input as "../../../../etc/passwd".In some cases where the file extension is added by default, we can avoid it by adding ***null byte terminator*** " %00".Any character after this special character will be ignored.
 
 Suppose that the input given is taken by the following code and the default extension being set is “.php”.
 ```php
