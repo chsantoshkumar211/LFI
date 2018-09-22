@@ -2,6 +2,9 @@
 
  > Local File Inclusion (also known as LFI) allows an attacker to include files in server-side through the web browser. File inclusions are part of every advanced server-side scripting language on the web.LFI is commonly found to affect web applications that rely on a scripting runtime. This occurs mainly due to a bad input validation mechanism, wherein the user’s input is passed to the file include commands without proper validation.
 
+## Impact
+A successful LFI may result in compromise of the system, data leakage etc. The attacker can read, write, download files and can also run arbitrary codes with privileges of the web server.
+
 ### Local file inclusion in PHP:
 
 Consider an example as follows where we can apply this attack.
@@ -31,8 +34,6 @@ An attacker can also download files by changing the file names. For example
 <br>URL: example/?download=broucher.pdf
 </br>The attacker may change the broucher.pdf to any other file such as passwords.txt,users.txt etc.
 
-## Impact
-A successful LFI may result in compromise of the system, data leakage etc. The attacker can read, write, download files and can also run arbitrary codes with privileges of the web server.
 
 ## Explore it yourself
 Make a PHP file with the code given above and explore different possibilities of the vulnerability.
